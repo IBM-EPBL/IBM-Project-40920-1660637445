@@ -1,0 +1,38 @@
+
+    {% extends 'base.html' %}
+    {% block body %} 
+    <div class="nav">
+      
+      <!-- <div class="name">
+        <h3>Name</h3>
+      </div> -->
+    </div>
+    <center>
+      <div align="center" class="border">
+        <div class="header">
+            <a href="/base"> <i class="fas fa-arrow-left"></i></a>
+          <h1>Register</h1>
+        </div>
+
+        <form action="/limitnum" method="post">
+          <h3 class="msg">{{msg}}</h3>
+          <table
+              <tr>
+                <th>Set limit:</th>
+                <td>
+                  <input
+                    id="number"
+                    name="number"
+                    type="text"
+                    placeholder="Enter the minimum limit"
+                    class="textbox"
+                  />
+                </td>
+              </tr>
+            </table>
+  
+            <input type="submit" class="btn" value="submit" />
+          </form>
+
+          {% endblock %}
+          

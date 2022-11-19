@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container ">
+                                                                                              
+
+<div class="row">
+    <div class="col-md-5">
+        <h3 class="mt-5">Total Expense Breakdown</h3>
+        {% for table in tables %}
+                              {{titles[loop.index]}}
+                                 {{ table|safe }}
+                        {% endfor %}
+                        
+
+
+ 
+         <div class="card shadow mb-2 btn-outline-danger rounded-pill">
+             <div class="card-body">
+             <div class="row">
+                 <div class="col-md-6">Total</div>
+                 <div class="col-md-6">₹ {{total}}  </div>
+              </div>
+             </div>
+         </div>
+ 
+        </div>
+       
+ 
+ 
+ 
+ 
+  
+         </script>
+        </div>
+    </div>
+ </div>
+
+
+
+</section>
+
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script>src="https://kit.fontawesome.com/17041f96e9.js"
+  crossorigin="anonymous"</script>
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link
+rel="shortcut icon"
+href="https://cdn-icons-png.flaticon.com/512/218/218390.png"
+type="image/x-icon"
+/>
+<link rel="stylesheet" href="/static/style.css" />  
+    <title>Document</title>
+   
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Dancing+Script:wght@500&family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+margin: 0;
+padding: 0;
+}
+body {
+width: 100%;
+height: 100%;
+background-color: burlywood;
+}
+a {
+text-decoration: none;
+}
+.nav {
+background-color: crimson;
+padding: 10px;
+display: flex;
+justify-content: space-between;
+}
+.nav .logo {
+display: flex;
+gap: 10px;
+}
+
+.nav .logo i {
+text-align: center;
+color: bisque;
+font-size: 30px;
+
+padding: 8px;
+}
+.nav .logo h3 {
+color: bisque;
+font-size: 30px;
+font-family: "Poppins", cursive;
+text-align: center;
+}
+.nav .name {
+text-align: center;
+color: bisque;
+font-size: 20px;
+font-family: "Poppins", cursive;
+}
+.border {
+background-color: bisque;
+width: fit-content;
+
+height: auto;
+margin: 150px;
+padding: 20px;
+border: 3px solid goldenrod;
+border-radius: 50px;
+}
+.border .header {
+width: fit-content;
+font-family: Poppins;
+font-size: 20px;
+color: crimson;
+letter-spacing: 3px;
+}
+form {
+width: fit-content;
+height: auto;
+}
+.border h3 {
+width: fit-content;
+padding: 5px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+font-size: 14px;
+margin-bottom: 20px;
+}
+table {
+padding: 30px;
+width: auto;
+border-spacing: 0 30px;
+
+font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+margin-bottom: 30px;
+}
+tr {
+background-color: azure;
+}
+td {
+padding: 10px;
+text-align: center;
+}
+th {
+background-color: crimson;
+color: bisque;
+padding: 5px;
+}
+.border .btn {
+background-color: gold;
+padding: 10px;
+border-radius: 10px;
+font-family: "Roboto Mono", monospace;
+border: none;
+border: 2px solid grey;
+margin-bottom: 20px;
+cursor: pointer;
+}
+p {
+font-family: "Courier New", Courier, monospace;
+color: green;
+font-size: 14px;
+width: fit-content;
+}
+a {
+color: crimson;
+}
+input {
+width: 200px;
+padding: 5px;
+font-size: 17px;
+border: none;
+text-decoration: none;
+outline: none;
+}
+
+</style>
+
+<body>
+  <nav class="navbar sticky-top  navbar-expand-lg navbar-light" style="background-color: #f876d1;">
+    <a class="navbar-brand" href="#">MyBudget</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/add">Add</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="/display">History chart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/limit">Limit</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Report
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/today">Today</a>
+            <a class="dropdown-item" href="/month">Month</a>
+            
+            <a class="dropdown-item" href="/year">Year</a>
+          </div>
+        </li>
+      </ul>
+        <div class="form-inline my-5 my-lg-1" style="position: absolute; left: 1250px;">
+      <ul class="navbar-nav mr-auto "  >  <li class="nav-item dropdown btn-group open">
+        <a class="btn btn-primary" href="/logout"><i class="fa fa-user fa-fw"></i>logout </a>
+  <a class="btn btn-primary dropdown-toggle "href="#" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+   
+  
+          </div>
+        </li>
+        
+      
+        <div ">
+       </ul>
+      </div>
+    
+    </div>
+  </nav>
+    {% block body %} 
+    {% endblock %}
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "446a3cd5-1c96-4c0c-920d-1dd308ca722c", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "3ea452fc-fef6-4c4c-bfa7-012683085117", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+</body>
+</html>

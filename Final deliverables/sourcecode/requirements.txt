@@ -1,0 +1,13 @@
+Flask
+ibm_db
+pandas
+requests
+flask_db2
+flask_mail
+Mail
+DB2
+jsonify
+sendgrid
+Docker
+Kubernetes
+jinja2
